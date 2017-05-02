@@ -85,7 +85,7 @@ transition: all 0.5s;
 
 .cont_forms_active_sign_up {
 box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-  height: 440px;
+  height: 480px;
 top: 0px;
 left:320px;
 -webkit-transition: all 0.5s;
@@ -319,7 +319,7 @@ transition: all 0.5s;
 
 .cont_form_sign_up > input {
 text-align: left;
-  padding: 10px 5px;
+  padding: 7px 5px;
 margin-left: 10px;
 margin-top: 10px;
   width: 260px;
@@ -355,4 +355,11 @@ font-weight: 400;
     float: left;
     margin: 10px;
 margin-left: 30px;
+}
+
+.hore{
+  text-align: center;
+}
+.hore > a:visited{
+  color: #555555;
 }
