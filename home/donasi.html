@@ -1,0 +1,172 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+    <meta charset="utf-8">   
+    <title>Donasi Terlaksana</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+</head>
+
+<body>
+    <div class="cotn_principal">
+        <div class="cont_centrar">
+            <div class="container">
+                <br>
+                <br>
+                <div class="col-md-3 bg">
+                    <br>
+                    <div class="header">
+                        <p class="headdd">Blood Stock</p>
+                        <span>
+                            <img class="gambar" src="http://vignette1.wikia.nocookie.net/spellencyclopedia/images/5/5d/Blood-drop.png/revision/latest?cb=20130218035131" alt="">
+                        </span>
+                    </div>
+                    <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Menu</div>
+                        <div class="panel-body">
+                            <ul>
+                                <li ><a href="request.html">Request Donasi</a></li>
+                                <li ><a href="persediaan.html">Persediaan darah</a></li>
+                                <li class="active"><a href="donasi.html">Donasi yang Telah Dilakukan</a></li>
+                                <li ><a href="pendonor.html">Daftar Pendonor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 bg">
+                    <br>
+                    <div class="alert alert-default">
+                        <p class="judulll">
+                            Daftar Donasi yang Telah Dilakukan
+                        </p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table id="myTable" class="table table-warna">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Tanggal Donasi
+                                    </th>
+                                    <th>
+                                        Nama Pendonor
+                                    </th>
+                                    <th>
+                                        Penerima
+                                    </th>
+                                    <th>
+                                        Kota
+                                    </th>
+                                    <th>
+                                        Golongan Darah
+                                    </th>
+                                    <th>
+                                        Jumlah (Kantong)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2017/02/02
+                                    </td>
+                                    <td>
+                                        Andika Muhammad
+                                    </td>
+                                    <td>
+                                        Muhammad Adib
+                                    </td>
+                                    <td>
+                                        Yogyakarta
+                                    </td>
+                                    <td>
+                                        AB-
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2017/02/10
+                                    </td>
+                                    <td>
+                                        Meizar Rimadana
+                                    </td>
+                                    <td>
+                                        RSU Sardjito
+                                    </td>
+                                    <td>
+                                        Yogyakarta
+                                    </td>
+                                    <td>
+                                        A+
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2017/02/10
+                                    </td>
+                                    <td>
+                                        RSU Sardjito
+                                    </td>
+                                    <td>
+                                        RSUD Sleman
+                                    </td>
+                                    <td>
+                                        Yogyakarta
+                                    </td>
+                                    <td>
+                                        B+
+                                    </td>
+                                    <td>
+                                        10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2017/04/27
+                                    </td>
+                                    <td>
+                                        Anggraini Dian
+                                    </td>
+                                    <td>
+                                        Ela Vania
+                                    </td>
+                                    <td>
+                                        Salatiga
+                                    </td>
+                                    <td>
+                                        B+
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-success"> Tambah Data </button>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('#myTable').dataTable();
+        });
+    </script>
+</html>
